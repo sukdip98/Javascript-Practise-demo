@@ -1,0 +1,27 @@
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 80vh;
+}
+.progress{
+    width: 0%;
+    height: 10px;
+    background-color: red;
+    transition: width 5s ease;
+}
+.container{
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+    margin: 200px auto;
+    border: 1px solid black;
+}
+.animate{
+    width: 100%;
+    margin-bottom: 10px;
+}

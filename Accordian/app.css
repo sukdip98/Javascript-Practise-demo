@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.accordian{
+    margin-bottom: 10px;
+}
+.container{
+    width:90vw;
+    margin:0px auto;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+.content{
+    margin-top: 5px;
+    padding: 10px;
+    background-color: aqua;
+    display: none;
+    position: relative;
+}
+.label{
+    padding: 20px;
+    background-color: aquamarine;
+    position: relative;
+    cursor: pointer;
+}
+.label::before{
+    content: '+';
+    font-size: large;
+    position: absolute;
+    right: 20px;
+}
+.label.active::before{
+    content: '-';
+    font-size: large;
+}
+.label.active+.content{
+    
+    display: block;
+    transition: display 2s;
+
+}
